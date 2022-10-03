@@ -1,3 +1,22 @@
+<!--
+ # EXERCÍCIO-1
+  Faça com que os itens do array do arquivo script.js sejam adicionados à página HTML, 
+  dentro dos itens `li` que estão na página. Repare que um dos itens "li" ficará vago. 
+  Vamos preenchê-lo no exercício 3.
+
+  # Exercício 2
+Crie um campo label e um campo input na página HTML, e preencha o campo com o nome de mais uma fruta.
+Depois disso, escreva **No DevTools** o código necessário para que seja possível imprimir o valor do input escrito no console.
+Cole o comando aqui:
+```jsx
+    cole o código JS nesta área.
+```
+# Exercício 3
+Crie uma função que faça com que o valor do input seja adicionado à lista de frutas do exercício 1. 
+Crie um botão, e utilize um evento de `onclick` no botão criado, para que ao clicar no botão, 
+o valor do input do exercício 2 seja adicionado à lista.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,18 +25,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
   <script src="script.js" defer></script>
 </head>
 
 <body>
-  <main>
+  <br>
+    <label for="texto">nome de mais uma fruta</label>
+    <input type="text" id="nomeDeMaisUmaFruta" name="texto" value="Melancia" onkeydown="exibirNaTela()"/>
+  </br>
+  <button onclick="trocarElemento()">Clique aqui</button>
     <ul id="lista-de-frutas">
       <li id="fruta-1"></li>
       <li id="fruta-2"></li>
       <li id="fruta-3"></li>
       <li id="fruta-4"></li>
     </ul>
+
   </main>
 </body>
 
